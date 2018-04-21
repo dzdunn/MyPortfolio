@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -142,15 +148,30 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DroneProjectsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProgrammingProjectsController.cs" />
+    <Compile Include="Controllers\ThreeDPrintingProjectsController.cs" />
+    <Compile Include="DAL\MyPortfolioConfig.cs" />
+    <Compile Include="DAL\MyPortfolioContext.cs" />
+    <Compile Include="DAL\MyPortfolioInitialiser.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Interfaces\IProject.cs" />
+    <Compile Include="Models\POCO\Image.cs" />
+    <Compile Include="Models\POCO\Video.cs" />
+    <Compile Include="Models\ProjectTypes\DroneProject.cs" />
+    <Compile Include="Models\ProjectTypes\ProgrammingProject.cs" />
+    <Compile Include="Models\ProjectTypes\ThreeDPrintingProject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\3Dprinter.jpg" />
+    <Content Include="Content\images\Drone.jpg" />
+    <Content Include="Content\images\Programming.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -160,6 +181,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\Thumbs.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -171,7 +193,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -185,10 +209,24 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\DroneProjects\Create.cshtml" />
+    <Content Include="Views\DroneProjects\Delete.cshtml" />
+    <Content Include="Views\DroneProjects\Details.cshtml" />
+    <Content Include="Views\DroneProjects\Edit.cshtml" />
+    <Content Include="Views\DroneProjects\Index.cshtml" />
+    <Content Include="Views\ProgrammingProjects\Create.cshtml" />
+    <Content Include="Views\ProgrammingProjects\Delete.cshtml" />
+    <Content Include="Views\ProgrammingProjects\Details.cshtml" />
+    <Content Include="Views\ProgrammingProjects\Edit.cshtml" />
+    <Content Include="Views\ProgrammingProjects\Index.cshtml" />
+    <Content Include="Views\ThreeDPrintingProjects\Create.cshtml" />
+    <Content Include="Views\ThreeDPrintingProjects\Delete.cshtml" />
+    <Content Include="Views\ThreeDPrintingProjects\Details.cshtml" />
+    <Content Include="Views\ThreeDPrintingProjects\Edit.cshtml" />
+    <Content Include="Views\ThreeDPrintingProjects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -22,3 +22,56 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+
+/* GLYPHICONS */
+
+/*.glyphicons-chevron-right{
+    background-image:url('~/glyphicons/glyphicons-224-chevron-right.png');
+}*/
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Home Page */
+
+.homePageImageContainer img {
+    object-fit: cover;
+    height: 250px;
+    width: 300px;
+}
+
+
+
+.navbar {
+    background: linear-gradient(10deg, #f4424e, #f4424e 40%, transparent);
+    border-color: rgba(255, 0, 0, 0);
+}
+
+.navbar li a, .navbar .dropdown-menu, .navbar a {
+    background-color: #f4424e;
+    border-color: #f4424e;
+    color: white;
+}
+
+
