@@ -20,7 +20,7 @@
             Around a year ago, I couldn't code at all. Since then, I've acquired skills in the basic scripting languages (HTML, CSS/Bootstrap, JavaScript/JQuery, SQL)
             alongside programming languages like Java, C++ and C#. Check out my projects thus far...
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Programming Projects &raquo;"), "Index", "ProgrammingProjects", new { }, new { @class = "btn btn-danger" })</p>
     </div>
     <div class="col-md-4">
         <div class="homePageImageContainer">
@@ -31,7 +31,7 @@
             Around a year ago, I knew nothing about electronics, avaiation or drones. Since then, it's become an addictively expensive hobby.
             Have a gander at my various tony whoops, racing quads, autonomous drones and flight footage...
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Drone Projects &raquo;"), "Index", "DroneProjects", new { }, new { @class = "btn btn-danger" })</p>
     </div>
     <div class="col-md-4">
         <div class="homePageImageContainer">
@@ -42,6 +42,6 @@
             Around a year ago, I knew nothing about 3D printing. At the start of this year, I built my first Anet A8 - a cheap but effective option with a massive
             community behind it. Take a peruse through my printing journey...
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("3D Printing Projects &raquo;"), "Index", "ThreeDPrintingProjects", new { }, new { @class = "btn btn-danger" })</p>
     </div>
 </div>
