@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: black;
+    color: aliceblue;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,20 +25,6 @@ textarea {
     max-width: 280px;
 }
 
-
-
-
-body {
-    background-color: black;
-    color: aliceblue;
-}
-
-
-/* GLYPHICONS */
-
-/*.glyphicons-chevron-right{
-    background-image:url('~/glyphicons/glyphicons-224-chevron-right.png');
-}*/
 
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -65,12 +53,12 @@ textarea {
 
 .navbar {
     background: linear-gradient(10deg, #f4424e, #f4424e 40%, transparent);
-    border-color: rgba(255, 0, 0, 0);
+    border-color: transparent;
 }
 
 .navbar li a, .navbar .dropdown-menu, .navbar a {
     background-color: #f4424e;
-    border-color: #f4424e;
+    border-color: transparent;
     color: white;
 }
 
