@@ -50,16 +50,43 @@ textarea {
 }
 
 
-
+/* NAVBAR THEME */
 .navbar {
-    background: linear-gradient(10deg, #f4424e, #f4424e 40%, transparent);
+    background: linear-gradient(10deg, #f4424e, #f4424e 30%, transparent);
     border-color: transparent;
 }
 
-.navbar li a, .navbar .dropdown-menu, .navbar a {
-    background-color: #f4424e;
-    border-color: transparent;
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
     color: white;
 }
 
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > .open > a:focus {
+        background-color: #00ffe8;
+        color: #f4424e;
+        font-weight: bolder;
+    }
 
+.navbar-default .navbar-nav .dropdown-menu, .navbar-default .navbar-nav .dropdown-menu > li > a {
+    background-color: #f4424e;
+    color: white;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #00ffe8;
+    color: #f4424e;
+    font-weight: bolder;
+}
+
+.navbar-default .navbar-header > button {
+    background-color: #f4424e;
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-header > button:hover {
+    background-color: #00ffe8;
+    color: #f4424e;
+}
