@@ -173,6 +173,7 @@
     <Content Include="Content\images\3Dprinter.jpg" />
     <Content Include="Content\images\Drone.jpg" />
     <Content Include="Content\images\Programming.jpg" />
+    <Content Include="Content\videos\AsboSquadV2.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
