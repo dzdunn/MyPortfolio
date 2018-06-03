@@ -176,7 +176,44 @@ video {
 
 /* ABOUT PAGE */
 
+.aboutHeader {
+    text-align: right;
+    border-bottom: 1px dotted #c03;
+    width: 100%;
+    display: block;
+}
+
+.aboutSubHeader {
+    text-align: center;
+    border-bottom: 1px dotted #c03;
+}
+
 .aboutHeader:hover {
     background-color: #f4424e;
     cursor:pointer;
+}
+
+.aboutSubHeader:hover {
+    background-color: #f4424e;
+    cursor: pointer;
+}
+
+.location{
+    font-style: italic;
+    text-align: right;
+}
+
+.midAboutHeader {
+    text-align: center;
+    border: 1px dotted #c03;
+    background-color: #f4424e;
+}
+
+.aboutIntro{
+    text-align: center;
+    font-size: larger;
+}
+
+#educationAndEmployment ul li{
+    padding: 10px;
 }
